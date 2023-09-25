@@ -18,6 +18,7 @@ const Search = ({ setCity }) => {
         placeholder="Search by city or country..."
         name="search"
         id="search"
+        data-testid="search_input"
       />
       <button
         type="button"
