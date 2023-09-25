@@ -1,0 +1,94 @@
+@import "../../styles/webGhoul.scss";
+.search_box {
+    background-color: $gray;
+    border-radius: 30px;
+    input {
+        background-color: $gray;
+        width: 300px;
+        padding: 10px 20px;
+        border-radius: 30px;
+        font-size: 20px;
+        &::placeholder {
+            font-size: 18px;
+        }
+
+        @media(max-width:$lg_size) {
+            width: 250px;
+            padding: 8px 18px;
+            border-radius: 28px;
+            font-size: 18px;
+            &::placeholder {
+                font-size: 16px;
+            }
+        }
+
+        @media(max-width:$md_size) {
+            width: 100%;
+            padding: 6px 16px;
+            border-radius: 26px;
+            font-size: 17px;
+            &::placeholder {
+                font-size: 16px;
+            }
+        }
+        @media(max-width:$sm_size) {
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 16px;
+            &::placeholder {
+                font-size: 14px;
+            }
+        }
+    }
+
+    button {
+        padding: 5px;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        box-shadow: rgba(0, 0, 0, 0.4) 0 2px 4px, rgba(0, 0, 0, 0.3) 0 7px 13px -3px, rgba(0, 0, 0, 0.2) 0 -3px 0 inset;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        svg {
+            font-size: 20px;
+            color: $main;
+        }
+        @media(max-width:$lg_size) {
+            padding: 4px;
+            width: 35px;
+            height: 35px;
+            svg {
+                font-size: 18px;
+            }
+        }
+
+        @media(max-width:$md_size) {
+            padding: 3px;
+            width: 30px;
+            height: 30px;
+            svg {
+                font-size: 16px;
+            }
+        }
+        @media(max-width:$sm_size) {
+            padding: 2px;
+            width: 25px;
+            height: 25px;
+            svg {
+                font-size: 14px;
+            }
+        }
+    }
+
+    @media(max-width:$lg_size) {
+        border-radius: 28px;
+    }
+
+    @media(max-width:$md_size) {
+        border-radius: 25px;
+    }
+    @media(max-width:$sm_size) {
+        border-radius: 22px;
+    }
+}

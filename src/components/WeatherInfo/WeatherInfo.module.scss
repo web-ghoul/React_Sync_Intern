@@ -1,0 +1,48 @@
+@import "../../styles/webGhoul.scss";
+
+.info {
+    background-color: $main;
+    border-radius: 10px;
+    color: $white;
+    font-size: 20px;
+    box-shadow: $box_shadow;
+    height: 100%;
+    width: 100%;
+
+    .large_font {
+        font-size: 35px;
+    }
+    .small_font {
+        font-size: 25px;
+    }
+    @media(max-width:$lg_size) {
+        border-radius: 8px;
+        font-size: 18px;
+        .large_font {
+            font-size: 30px;
+        }
+        .small_font {
+            font-size: 22px;
+        }
+    }
+    @media(max-width:$md_size) {
+        border-radius: 6px;
+        font-size: 16px;
+        .large_font {
+            font-size: 28px;
+        }
+        .small_font {
+            font-size: 20px;
+        }
+    }
+    @media(max-width:$sm_size) {
+        border-radius: 4px;
+        font-size: 14px;
+        .large_font {
+            font-size: 25px;
+        }
+        .small_font {
+            font-size: 18px;
+        }
+    }
+}

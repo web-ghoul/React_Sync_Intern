@@ -1,0 +1,21 @@
+@import "../../styles/webGhoul.scss";
+.country_and_city {
+    font-size: 40px;
+}
+
+@media(max-width:$lg_size) {
+    .country_and_city {
+        font-size: 35px;
+    }
+}
+
+@media(max-width:$md_size) {
+    .country_and_city {
+        font-size: 30px;
+    }
+}
+@media(max-width:$sm_size) {
+    .country_and_city {
+        font-size: 25px;
+    }
+}

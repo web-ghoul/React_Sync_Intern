@@ -1,0 +1,23 @@
+@import "../../styles/webGhoul.scss";
+.weather_logo {
+    img {
+        width: 150px;
+    }
+
+    @media(max-width:$lg_size) {
+        img {
+            width: 130px;
+        }
+    }
+
+    @media(max-width:$md_size) {
+        img {
+            width: 100px;
+        }
+    }
+    @media(max-width:$sm_size) {
+        img {
+            width: 80px;
+        }
+    }
+}
